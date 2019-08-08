@@ -28,12 +28,6 @@ module "aws-1" {
     source = "./modules/module-a"
     providers = {
         aws = aws.account-1
-    }
-}
-
-module "aws-2" {
-    source = "./modules/module-a"
-    providers = {
         aws = aws.account-2
     }
 }
