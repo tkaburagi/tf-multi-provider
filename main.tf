@@ -24,16 +24,24 @@ provider "aws" {
     secret_key = var.secret_key_2
 }
 
-module "module-a-1" {
+module "module-a" {
     source = "./modules/module_a"
     providers = {
         aws = aws.account-1
-    }
-}
-
-module "module-a-2" {
-    source = "./modules/module_a"
-    providers = {
         aws = aws.account-2
     }
 }
+
+//module "module-a-1" {
+//    source = "./modules/module_a"
+//    providers = {
+//        aws = aws.account-1
+//    }
+//}
+//
+//module "module-a-2" {
+//    source = "./modules/module_a"
+//    providers = {
+//        aws = aws.account-2
+//    }
+//}
