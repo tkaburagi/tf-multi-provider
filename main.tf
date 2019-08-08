@@ -5,7 +5,7 @@ terraform {
         organization = "tkaburagi"
 
         workspaces {
-            name = "hashistack"
+            name = "multi-provider"
         }
     }
 }
