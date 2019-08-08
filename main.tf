@@ -27,7 +27,7 @@ provider "aws" {
 module "module-a" {
     source = "./modules/module_a"
     providers = {
-        aws = aws.account-1
-        aws = aws.account-2
+        "aws.foo" = aws.account-1
+        "aws.bar" = aws.account-2
     }
 }
