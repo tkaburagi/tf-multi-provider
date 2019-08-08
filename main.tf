@@ -24,8 +24,8 @@ provider "aws" {
     secret_key = var.secret_key_2
 }
 
-module "aws-1" {
-    source = "./modules/module-a"
+module "module-a" {
+    source = "./modules/module_a"
     providers = {
         aws = aws.account-1
         aws = aws.account-2
