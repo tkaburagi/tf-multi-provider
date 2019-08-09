@@ -29,6 +29,8 @@ module "module-a-1" {
     providers = {
         aws = aws.account-1
     }
+    vpc_cidr = var.vpc_cidr
+
 }
 
 module "module-a-2" {
@@ -36,4 +38,6 @@ module "module-a-2" {
     providers = {
         aws = aws.account-2
     }
+    vpc_cidr = var.vpc_cidr
+
 }
